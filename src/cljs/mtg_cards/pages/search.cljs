@@ -12,16 +12,12 @@
       [search-form/render])]
 
     (when-not (empty? @state/found-cards)
-     [:p (str "Found " (count @state/found-cards) " card(s)")]
 
-     [:div.table-responsive
-      [:table.table-striped {:class "table"}
-       [:thead
-        [:tr
-         [:th "Name"]
-         [:th "P/T"]
-         [:th "Mana cost"]
-         ]]
-       [:tbody
-        (for [{:keys [id name power toughness setName manaCost]} @state/found-cards]
-          ^{:key id} [card-link/render id name power toughness setName manaCost])]]])])
+      [:div
+       [:div {:class "row"}
+        [:div {:class "col-sm-4 col-xs-6 col-label col-name"} "Name"]
+        [:div {:class "col-sm-4 col-xs-2 col-label"}  "P/T"]
+        [:div {:class "col-sm-4 col-xs-4 col-label"}  "Mana cost"]]
+
+       (for [{:keys [id name power toughness setName manaCost]} @state/found-cards]
+         ^{:key id} [card-link/render id name power toughness setName manaCost])])])

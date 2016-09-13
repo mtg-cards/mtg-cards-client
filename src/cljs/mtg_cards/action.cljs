@@ -45,7 +45,7 @@
     (reset! state/found-set-cards nil)
     (reset! state/current-set set-code)
     (go (let [{:keys [body status] :as response}
-              (js->clj (<! (http/get (str "https://api.magicthegathering.io/v1/cards?pageSize=100&set=" set-code))))]
+              (js->clj (<! (http/get (str "https://api.magicthegathering.io/v1/cards?set=" set-code))))]
           (if (= status 200)
             (let [cards (:cards (js->clj body))
                   sorted (sort-by :name cards)]
