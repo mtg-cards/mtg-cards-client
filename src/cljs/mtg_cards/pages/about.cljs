@@ -18,18 +18,18 @@
 
    [:div.about-section
     [:h4.work-title "API"]
-    [:div.person-name "Andrew Backes"]
+    [:div.credit-item "Andrew Backes"]
     [:p "magicthegathering.io"]]
 
    [:div.about-section
     [:h4.work-title "Card Images"]
-    [:div.person-name "Gatherer"]
+    [:div.credit-item "Gatherer"]
     [:p "gatherer.wizards.com"]]
 
    [:div.about-section
     [:h4.work-title "Powered By"]
-    [:div.person-name "ClojureScript / Reagent"]]
+    [:div.credit-item "ClojureScript / Reagent"]]
 
    [:div.about-section
     [:h4.work-title "Source Code"]
-    [:div.person-name "Coming soon!"]]])
+    [:div.credit-item [:a {:href "https://github.com/mtg-cards"} "Github repositories"]]]])
