@@ -1,0 +1,102 @@
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+body {
+  padding-top: 50px;
+}
+
+.template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+a {
+  cursor:pointer;
+}
+
+input {
+  padding-left: 3px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  width: 100%;
+  max-width: 226px;
+}
+
+.no-title {
+  padding-top: 30px;
+}
+
+.mana-icon {
+  position: relative;
+  bottom: 1px;
+  margin-left: 4px;
+}
+
+.search-form-section {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.table-striped > tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+.list-data {
+  padding:3px;
+  text-align: left;
+}
+
+.note {
+  margin-bottom: 2em;
+}
+
+.set-name {
+  font-size: 0.8em;
+}
+
+.card-type {
+  margin-bottom: 2em;
+}
+
+.card-data {
+  text-align: left;
+}
+
+.card-image {
+  margin-bottom: 2em;
+}
+
+.back-link {
+  margin-top: 2em;
+}
+
+.about-section {
+  padding-bottom: 30px;
+}
+
+.link-icon-section {
+  margin-top: 5px;
+}
+
+.work-title {
+  text-decoration: underline;
+}
+
+.person-name {
+  font-size: 1.2em;
+}
+
+.link-icon {
+  font-size: 1.5em !important;
+}
