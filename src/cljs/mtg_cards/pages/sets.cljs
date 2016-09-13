@@ -17,9 +17,9 @@
 
       [:div
        [:div {:class "row"}
-        [:div {:class "col-sm-4 col-xs-6 col-label col-name"} "Name"]
-        [:div {:class "col-sm-4 col-xs-6 col-label"} "Release date"]
-        [:div {:class "col-sm-4 col-xs-12 col-label set-type"} "Type"]]
+        [:div {:class "col-sm-4 col-xs-6 col-label col-name text-left"} "Name"]
+        [:div {:class "col-sm-4 col-xs-6 col-label text-left"} "Release date"]
+        [:div {:class "col-sm-4 col-xs-12 col-label set-type text-left"} "Type"]]
 
        (for [{:keys [code name releaseDate type]} @state/found-sets]
          ^{:key code} [set-link/render code name releaseDate type false])]])])

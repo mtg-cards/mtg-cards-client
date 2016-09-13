@@ -15,9 +15,9 @@
 
       [:div
        [:div {:class "row"}
-        [:div {:class "col-sm-4 col-xs-6 col-label col-name"} "Name"]
-        [:div {:class "col-sm-4 col-xs-2 col-label"}  "P/T"]
-        [:div {:class "col-sm-4 col-xs-4 col-label"}  "Mana cost"]]
+        [:div {:class "col-sm-4 col-xs-6 col-label col-name text-left"} "Name"]
+        [:div {:class "col-sm-4 col-xs-2 col-label text-left"}  "P/T"]
+        [:div {:class "col-sm-4 col-xs-4 col-label text-left"}  "Mana cost"]]
 
        (for [{:keys [id name power toughness setName manaCost]} @state/found-cards]
          ^{:key id} [card-link/render id name power toughness setName manaCost])])])

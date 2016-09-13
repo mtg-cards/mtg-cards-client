@@ -42,37 +42,12 @@ input {
 }
 
 .col-label {
-  text-align: left;
   margin-bottom: 1em;
   font-weight: bold;
 }
 
-.col-data {
-  text-align: left;
-}
-
 .col-name {
-  text-align: left;
   padding-left: 1.6em;
-}
-
-.card-name {
-  text-align: left;
-}
-
-/* For medium screen */
-@media (max-width: 768px) {
-  .row-striped {
-    padding: 0.5em;
-  }
-
-  .card-name {
-    margin-bottom: 0.5em;
-  }
-
-  .set-type {
-    margin-left: 0.5em;
-  }
 }
 
 .card {
@@ -146,4 +121,19 @@ input {
 
 .link-icon {
   font-size: 1.5em !important;
+}
+
+/* For medium screen */
+@media (max-width: 768px) {
+  .row-striped {
+    padding: 0.5em;
+  }
+
+  .card-name {
+    margin-bottom: 0.5em;
+  }
+
+  .set-type {
+    margin-left: 0.5em;
+  }
 }
