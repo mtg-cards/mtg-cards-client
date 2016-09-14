@@ -1,6 +1,7 @@
 /target
 /classes
 /checkouts
+deploy.sh
 profiles.clj
 pom.xml
 pom.xml.asc
@@ -8,8 +9,8 @@ pom.xml.asc
 *.class
 /.lein-*
 /.nrepl-port
-/resources/public/js
-/resources/public/css/site.min.css
+/public/js
+/public/css/site.min.css
 /out
 /.repl
 *.log

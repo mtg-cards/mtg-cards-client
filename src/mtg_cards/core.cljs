@@ -1,9 +1,9 @@
 (ns mtg-cards.core
-    (:require [reagent.core :as reagent :refer [atom]]
-              [reagent.session :as session]
-              [secretary.core :as secretary :include-macros true]
-              [accountant.core :as accountant]
-              [mtg-cards.router :as router]))
+  (:require [reagent.core :as reagent :refer [atom]]
+            [reagent.session :as session]
+            [secretary.core :as secretary :include-macros true]
+            [accountant.core :as accountant]
+            [mtg-cards.router :as router]))
 
 (defn current-page []
   [:div [(session/get :current-page)]])
