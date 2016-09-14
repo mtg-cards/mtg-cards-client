@@ -5,6 +5,9 @@
             [cljs.core.async :refer [<!]]
             [clojure.string :refer [lower-case includes?]]))
 
+; Search for cards containing search phrase
+; Store the list in app state, so when user comes back to the search page,
+; the results are already loaded.
 (defn search [card-name]
   (reset! state/loading true)
   (reset! state/found-cards nil)
@@ -17,6 +20,7 @@
             (reset! state/found-cards sorted))
           nil))))
 
+; Fetch card specific data from the API.
 (defn get-card-data [id]
   (reset! state/current-card nil)
   (reset! state/loading true)
@@ -28,6 +32,9 @@
             (reset! state/current-card card))
           nil))))
 
+; Fetch a list of all MtG sets ever released.
+; Store the list in the app state so whenever user comes back to it, it is
+; loaded from the cache.
 (defn get-sets []
   (when (empty? @state/found-sets)
     (reset! state/loading true)
@@ -39,6 +46,8 @@
               (reset! state/found-sets sets))
             nil)))))
 
+; Fetch a list of cards related to selected set.
+; This feature is not implemented yet as the pagination is not done yet.
 (defn get-set-cards [set-code]
   (when-not (= @state/current-set set-code)
     (reset! state/loading true)

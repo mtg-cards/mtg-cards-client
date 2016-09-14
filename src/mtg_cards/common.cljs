@@ -4,6 +4,7 @@
   (let [replacement-list (partition 2 replacements)]
     (reduce #(apply clojure.string/replace %1 %2) content replacement-list)))
 
+; Replace several mana string representations into image tags.
 (defn render-mana-icons [text]
   (if text
     (replace-several text
