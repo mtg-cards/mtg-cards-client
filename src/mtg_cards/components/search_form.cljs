@@ -12,10 +12,14 @@
   (clear-form))
 
 (defn render []
-  [:div
-   [:form {:onSubmit (fn [e] (.preventDefault e))}
-    [:input {:type "text"
-             :placeholder "Enter card name"
-             :value @card-name
-             :onChange #(reset! card-name (-> % .-target .-value))}]
-    [:button {:onClick #(submit-form)} "Search"]]])
+  [:div {:class "row text-center"}
+   [:div.col-lg-12
+    [:div.input-groups
+     [:form {:class "form-inline" :onSubmit (fn [e] (.preventDefault e))}
+      [:input {:type "text"
+               :size 40
+               :class "form-control card-name-input"
+               :placeholder "Enter card name"
+               :value @card-name
+               :onChange #(reset! card-name (-> % .-target .-value))}]
+      [:button {:class "btn btn-primary do-search" :onClick #(submit-form)} "Search"]]]]])

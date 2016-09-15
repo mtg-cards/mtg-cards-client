@@ -19,8 +19,8 @@ a {
   cursor:pointer;
 }
 
-input {
-  padding-left: 3px;
+.card-name-input {
+  margin-right: 1em;
 }
 
 .logo {
@@ -124,7 +124,7 @@ input {
 }
 
 /* For medium screen */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .row-striped {
     padding: 0.5em;
   }
@@ -135,5 +135,10 @@ input {
 
   .set-type {
     margin-left: 0.5em;
+  }
+
+  .do-search {
+    width: 100%;
+    margin-top: 0.5em;
   }
 }
